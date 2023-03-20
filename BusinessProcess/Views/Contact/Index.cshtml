@@ -1,0 +1,40 @@
+﻿@model List<BusinessProcess.Models.ContactsModel>
+
+@{
+}
+
+
+<h1>Contact</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Code</th>
+            <th>Initials</th>
+            <th>Firstname</th>
+            <th>Surename</th>
+            <th>Address1</th>
+            <th>Address2</th>
+            <th>DoB</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contact in Model)
+        {
+            <tr>
+                <td>@contact.Id</td>
+                <td>@contact.Code</td>
+                <td>@contact.Initials</td>
+                <td>@contact.Firstname</td>
+                <td>@contact.Surename</td>
+                <td>@contact.Address1</td>
+                <td>@contact.Address2</td>
+                <td>@contact.DoB</td>
+                <td>@contact.Status</td>
+                <td><a href="Contact/View/@contact.Id">View</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

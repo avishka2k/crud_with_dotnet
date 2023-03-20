@@ -1,0 +1,43 @@
+﻿@model BusinessProcess.Models.ContactsModel
+
+<h1>Update Contact</h1>
+<form method="POST" action="View" class="w-25 m-auto">
+  <div class="mb-3">
+    <label for="Code" class="form-label">Id</label>
+    <input type="text" class="form-control" asp-for="Id" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="Code" class="form-label">Code</label>
+    <input type="number" class="form-control" asp-for="Code">
+  </div>
+    <div class="mb-3">
+        <label for="Initials" class="form-label">Initials</label>
+        <input type="text" class="form-control" asp-for="Initials">
+    </div>
+    <div class="mb-3">
+        <label for="Firstname" class="form-label">Firstname</label>
+        <input type="text" class="form-control" asp-for="Firstname">
+    </div>
+    <div class="mb-3">
+        <label for="Surename" class="form-label">Surename</label>
+        <input type="text" class="form-control" asp-for="Surename">
+    </div>
+    <div class="mb-3">
+        <label for="Address1" class="form-label">Address1</label>
+        <input type="text" class="form-control" asp-for="Address1">
+    </div>
+    <div class="mb-3">
+        <label for="Address2" class="form-label">Address2</label>
+        <input type="text" class="form-control" asp-for="Address2">
+    </div>
+    <div class="mb-3">
+        <label for="DoB" class="form-label">DoB</label>
+        <input type="date" class="form-control" asp-for="DoB">
+    </div>
+    <div class="mb-3">
+        <label for="Status" class="form-label">Status</label>
+        <input type="text" class="form-control" asp-for="Status">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Contact">Delete</button>
+</form>
